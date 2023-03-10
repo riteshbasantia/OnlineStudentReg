@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Registration
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="head">
+    <h1 style="font-size: 30px; display: flex; justify-content: center;">Student Registration Form</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+<div style="padding-top: 10px; display: flex; flex-direction: column;align-items: flex-start; height: 90px; justify-content: space-evenly;">
+          <label>Gender</label>
+          <div><input type="radio" name="gender" id="gender" value="Male"> <span style="margin-left: 5px;">Male</span> </div>
+          <div><input type="radio" name="gender" id="gender" value="Female"><span style="margin-left: 5px;">Female</span> </div>
+          <div><input type="radio" name="gender" id="gender" value="Others"><span style="margin-left: 5px;">Others</span> </div>
+        </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="text" name="pass" id="pass">
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input type="text" name="cpass" id="cpass">
+                    </div>
+                    <div>
+                        <label>Date of Birth</label><br>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                        <br>
+                        <div>
+                            <label>Mobile No.</label>
+                            <input type="number" name="mob" id="mob">
+                        </div>
+                        <div>
+                            <label>State</label>
+                            <input type="text" name="state" id="state">
+                        </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                    <div>
+                        <label>Pin Code</label>
+                        <input type="text" name="pin" id="pin">
+                    </div>
+                    <div
+          style="padding-top: 8px; display: flex; flex-direction: column;align-items: flex-start; height: 110px; justify-content: space-between;padding-bottom: 30px;">
+          <label>Course Applied For</label>
+          <div><input type="radio" name="course" id="course" value="MCA"> <span style="margin-left: 5px;">MCA</span> </div>
+          <div><input type="radio" name="course" id="course" value="ABM"><span style="margin-left: 5px;">ABM</span> </div>
+          <div><input type="radio" name="course" id="course" value="BI"><span style="margin-left: 5px;">BI</span> </div>
+        </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Password</th>
+                            <th>Conf Pass</th>
+                            <th>D.O.B</th>
+                            <th>Mob No.</th>
+                            <th>State</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Pin</th>
+                            <th>Course</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
